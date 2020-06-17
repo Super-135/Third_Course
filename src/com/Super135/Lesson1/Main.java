@@ -1,4 +1,4 @@
-package com.Super135;
+package com.Super135.Lesson1;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -27,10 +27,13 @@ public class Main {
             arrOrange.add(new Orange());
         }
 
+
         Box<Orange> orangeBox = new Box<>(arrOrange);
         Box<Apple> appleBox = new Box<>();
+        Box<Apple> appleBox2 = new Box<>();
         for (int i = 0; i < 12; i++) {
             appleBox.setFrut(new Apple());
+            appleBox2.setFrut(new Apple());
         }
 
         System.out.println(appleBox.getWeight());
@@ -39,8 +42,10 @@ public class Main {
         appleBox.intersperse(appleBox);
         System.out.println(appleBox);
         appleBox.intersperse(orangeBox);
+        appleBox.intersperse(appleBox2);
         System.out.println(appleBox);
         System.out.println(orangeBox);
+        System.out.println(appleBox2);
 
     }
 

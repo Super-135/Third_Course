@@ -1,4 +1,4 @@
-package com.Super135;
+package com.Super135.Lesson1;
 
 public class Orange extends Fruit {
     private static final float WEIGHT = 1.5f;

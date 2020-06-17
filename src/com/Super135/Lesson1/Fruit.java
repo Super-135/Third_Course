@@ -1,4 +1,4 @@
-package com.Super135;
+package com.Super135.Lesson1;
 
 
 public abstract class Fruit {

@@ -1,8 +1,6 @@
-package com.Super135;
+package com.Super135.Lesson1;
 
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
 import java.util.List;
 
 public class Box <T extends Fruit> {
@@ -39,9 +37,13 @@ public class Box <T extends Fruit> {
     }
 
     public void intersperse(Box boxFrut){
-        if(! this.equals(boxFrut)){
-            boxFrut.setFrutBox(this);
-            this.fruts.clear();
+        if (this.fruts.size() > 0 && boxFrut.fruts.size()>0 && this.fruts.get(0).getClass() == boxFrut.fruts.get(0).getClass()) {
+            if (!this.equals(boxFrut)) {
+                boxFrut.setFrutBox(this);
+                this.fruts.clear();
+            }
+        }else{
+            System.out.println("В коробках разные фрукты");
         }
     }
 
